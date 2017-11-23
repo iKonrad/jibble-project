@@ -1,0 +1,74 @@
+.results {
+  margin-top: 20px;
+
+  &__card {
+    margin: 15px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.08);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.03), 0 10px 10px rgba(0,0,0,0.06);
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: lighten($gray-base, 70%);;
+      &:hover {
+        color: lighten($gray-base, 45%);
+        cursor: pointer;
+
+        &:after {
+          position: relative;
+          right: 0;
+          content: '\f044';
+          font-size: 18px;
+          color: lighten($gray-base, 45%);
+          font-family: "FontAwesome";
+          margin-left: 5px;
+        }
+      }
+    }
+
+    &__album {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    &__author {
+      font-weight: 200;
+      font-size: 16px;
+      color: lighten($gray-base, 80%);
+      margin-top: 10px;
+    }
+
+    &__input {
+      display: inline-block;
+      width: 100%;
+      border: none;
+      font-size: 22px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    &__delete {
+      position: relative;
+      top: 10px;
+      color: $brand-danger;
+      background: none;
+      border: none;
+    }
+
+    &__footer {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+}

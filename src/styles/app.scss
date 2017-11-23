@@ -1,0 +1,21 @@
+//** Load fonts from this directory.
+$bootstrap-sass-asset-helper: false;
+$icon-font-path: "/node_modules/bootstrap-sass/assets/fonts/";
+
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./_variables";
+
+
+@import "./components/footer";
+@import "./components/buttons";
+@import "./components/results";
+
+#root {
+  padding-top: 30px;
+}
+
+
+body {
+  height: 100vh;
+  background-color: $gray-lighter;
+}

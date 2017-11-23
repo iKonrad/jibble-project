@@ -1,0 +1,43 @@
+.btn {
+  border-radius: 0px;
+  transition: all 0.1s ease-in-out;
+  padding: 10px 20px;
+
+  &-primary {
+    border-color: $brand-primary;
+
+    &:hover {
+      border-color: darken($brand-primary, 5%);
+      background-color: darken($brand-primary, 5%);
+    }
+  }
+
+  &-link {
+    &.btn-danger {
+      color: $brand-danger;
+
+      &:hover {
+        color: white;
+        background-color: $brand-danger;
+        border-color: $brand-danger;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-sm {
+    padding: 5px 10px;
+  }
+
+  &-favourite {
+    i.fa {
+      color: $text-muted;
+    }
+
+    &.favourite-added {
+      i.fa {
+        color: $brand-danger!important;
+      }
+    }
+  }
+}
