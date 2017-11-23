@@ -10,7 +10,7 @@ The project has been built on top of the following frameworks/libraries:
 * redux-thunk middleware for async actions
 
 ## Installation
-Clone the repository, and then run `npm start`. Once all the dependencies are installed, a new window in your browser should open with the project page.
+Clone the repository, and then run `npm install`. Once all the dependencies are installed, you can run `npm start`, which will open a new window in your browser with the project page.
 
 ## Folder Structure
 
